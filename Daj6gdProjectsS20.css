@@ -47,6 +47,10 @@ body {
   background-color: darkslategrey;
 }
 
+.navbar_item.active {
+  background-color: lightslategray;
+}
+
 /* https://www.w3schools.com/css/css3_images.asp */
 .picture {
   position: relative;
