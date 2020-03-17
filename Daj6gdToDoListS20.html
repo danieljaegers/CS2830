@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!-- 
+    Daniel Jaegers
+    DAJ6GD
+    2/26/2020
+    Challenge 6: To-Do List S20
+ -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>To-Do List</title>
+
+    <!-- https://getbootstrap.com/docs/4.0/getting-started/introduction/#css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/8192701e40.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="Daj6gdToDoListS20.css" />
+  </head>
+
+  <body>
+    <div class="topBar">
+      <a href="Daj6gdProjectsS20.html" class="align-left">Back to Projects</a>
+      <button
+        id="themeButton"
+        class="align-right"
+        type="button"
+        onclick="handleTheme()"
+      >
+        Dark
+      </button>
+    </div>
+
+    <br />
+
+    <h1>To-Do List</h1>
+
+    <div class="table-responsive">
+      <!-- https://getbootstrap.com/docs/4.0/content/tables/ -->
+      <table id="todoList" class="table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Type</th>
+            <th scope="col">Date</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="todoListBody"></tbody>
+      </table>
+    </div>
+
+    <br />
+
+    <!-- 
+      The required attribute is the main form validation.
+      As a backup, the JavaScript function validateForm is called.
+    -->
+    <div>
+      <p id="errorMessage">All fields are required!</p>
+      <h4>Add to the To-Do List</h4>
+      <form id="addForm">
+        <input
+          id="title"
+          type="text"
+          name="title"
+          placeholder="Title"
+          required
+        />
+        <select id="type" name="type" required>
+          <option value="">Select Type</option>
+          <option value="Homework">Homework</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <input id="date" type="date" name="date" required /><br />
+        <button id="addButton" type="submit">Add Item</button>
+        <button id="clearButton" type="button" onclick="clearForm()">
+          Clear the Form
+        </button>
+      </form>
+    </div>
+
+    <script src="Daj6gdToDoListS20.js"></script>
+  </body>
+</html>

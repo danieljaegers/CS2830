@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<!-- 
+    Daniel Jaegers
+    DAJ6GD
+    2/9/2020
+    Challenge 4: Tables Spring 2020
+ -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Jaegers</title>
+
+    <!-- https://getbootstrap.com/docs/4.0/getting-started/introduction/#css -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/8192701e40.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="Daj6gdProjectsS20.css" />
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/css/css_navbar.asp -->
+    <ul id="mynavbar">
+      <li class="navbar_item">
+        <a href="Daj6gdPortfolio.html">Daniel Jaegers</a>
+      </li>
+      <li class="navbar_item"><a href="Daj6gdColumns.html">Skills</a></li>
+      <li class="navbar_item">
+        <a href="Daj6gdTablesS20.html">Classes Taken</a>
+      </li>
+      <li class="navbar_item"><a href="Daj6gdProjectsS20.html">Projects</a></li>
+    </ul>
+
+    <br />
+
+    <!-- https://getbootstrap.com/docs/4.0/content/tables/ -->
+    <table id="classesTable" class="table-dark table-bordered table-striped">
+      <thead>
+        <tr>
+          <th colspan="5">Classes Taken</th>
+        </tr>
+        <tr>
+          <th id="um_header" colspan="4">University of Missouri</th>
+          <th id="mu_header" colspan="1">
+            <a class="button" href="#popup1">
+              <img
+                id="mu_tiger"
+                src="images/mu-tiger.png"
+                alt="Mizzou Tiger Logo"
+              />
+            </a>
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">Department</th>
+          <th scope="col">Class</th>
+          <th scope="col">Number</th>
+          <th scope="col">Description</th>
+          <th scope="col">Projects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="department table-success" scope="row" rowspan="3">
+            Computer Science
+          </th>
+          <td>Cloud Computing</td>
+          <td>4530</td>
+          <td>
+            This course covers principles that integrate computing theories and
+            information technologies with the design, programming and
+            application of distributed systems. The course topics will
+            familiarize students with distributed system models and enabling
+            technologies; virtual machines and virtualization of clusters,
+            networks and data centers; cloud platform architecture with security
+            over virtualized data centers; service-oriented architectures for
+            distributed computing; and cloud programming and software
+            environments. Additionally, students will learn how to conduct some
+            parallel and distributed programming and performance evaluation
+            experiments on applications within available cloud platforms.
+            Finally we will survey research literature and latest technology
+            trends that are shaping the future of high performance, distributed
+            and cloud computing.
+          </td>
+          <td>
+            Experience designing, developing, and deploying distributed systems
+            within AWS.
+          </td>
+        </tr>
+        <tr>
+          <td>Artificial Intelligence I</td>
+          <td>4750</td>
+          <td>
+            Introduction to the concepts and theories of intelligent systems.
+            Various approaches to creating intelligent systems, including
+            symbolic and computational approaches, insight into the
+            philosophical debates important to understanding AI.
+          </td>
+          <td>
+            15-puzzle Solver
+            <ul>
+              <li>Iterative deepening tree search</li>
+              <li>Depth-first graph search</li>
+              <li>A* tree search using Manhattan distance</li>
+            </ul>
+            Four-in-a-Row
+            <ul>
+              <li>Minimax algorithm</li>
+            </ul>
+            Boolean Satisfiability Solver
+            <ul>
+              <li>Backtracking algorithm</li>
+              <li>MRV and degree heuristic</li>
+              <li>Forward checking</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Natural Language Processing</td>
+          <td>4740</td>
+          <td>
+            The goal of this course is to enable students to develop substantive
+            NLP applications. Focus on current structural and statistical
+            techniques for the parsing and interpretation of text.
+          </td>
+          <td>
+            Collect and analyze Twitter data for gender-correlated language and
+            explore any relationships between the gender of the poster, number
+            of posts, number of followers, and verified status.
+          </td>
+        </tr>
+        <tr>
+          <th class="department table-info" scope="row" rowspan="2">
+            Statistics
+          </th>
+          <td>Applied Statistical Models</td>
+          <td>4510</td>
+          <td>
+            Introduction to applied statistical models including regression and
+            ANOVA, logistic regression, discriminant analysis, tree-based
+            methods, semi-parametric regression, support vector machines, and
+            unsupervised learning through principal component and clustering.
+          </td>
+          <td>Modeling experience with R.</td>
+        </tr>
+        <tr>
+          <td>Time Series Analysis</td>
+          <td>4870</td>
+          <td>
+            A study of univariate and multivariate time series models and
+            techniques for their analyses. Emphasis is on methodology rather
+            than theory. Examples are drawn from a variety of areas including
+            business, economics and soil science.
+          </td>
+          <td>
+            Created a SARIMA model of monthly occupied rooms at regional hotels
+            in order to forecast occupancy.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <div id="cssCard" class="clear">
+      <div id="card_1" class="cardColumn">
+        <img
+          id="profilePicture"
+          src="images/DanielJaegers_Professional.jpg"
+          alt="Picture of Daniel Jaegers"
+        />
+      </div>
+      <div id="card_2" class="cardColumn">
+        <h2>Daniel Jaegers</h2>
+        <hr />
+        <p>
+          Computer Science <br />
+          Minor in Statistics <br />
+          Senior | Credits: 147
+        </p>
+        <p>
+          Shelter Insurance <br />
+          FAPRI-MU <br />
+        </p>
+      </div>
+      <div id="card_3" class="cardColumn">
+        <h2>Information</h2>
+        <hr />
+        <p>
+          Jaegers.Daniel1@gmail.com <br />
+          DAJ6GD@mail.missouri.edu <br />
+        </p>
+
+        <div id="icons">
+          <a href="https://www.github.com/danieljaegers" class="icon"
+            ><i class="fab fa-github fa-4x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/danieljaegers" class="icon"
+            ><i class="fab fa-linkedin fa-4x"></i
+          ></a>
+          <a href="https://danieljaegers.com/documents/resume.pdf" class="icon"
+            ><i class="far fa-file fa-4x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-I65g0K2_Bo"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
