@@ -21,17 +21,20 @@
     <link rel="stylesheet" type="text/css" href="Daj6gdProjectsS20.css" />
   </head>
   <body>
-    <!-- https://www.w3schools.com/css/css_navbar.asp -->
-    <ul id="mynavbar">
-      <li class="navbar_item">
-        <a href="index.html">Daniel Jaegers</a>
-      </li>
-      <li class="navbar_item active"><a href="Daj6gdColumns.html">Skills</a></li>
-      <li class="navbar_item">
-        <a href="Daj6gdTablesS20.html">Classes Taken</a>
-      </li>
-      <li class="navbar_item"><a href="Daj6gdProjectsS20.html">Projects</a></li>
-    </ul>
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Daniel Jaegers</a>
+      <a href="Daj6gdColumns.html" class="active">Skills</a>
+      <a href="Daj6gdTablesS20.html">Classes Taken</a>
+      <a href="Daj6gdProjectsS20.html">Projects</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size:15px;"
+        class="icon"
+        onclick="handleResponsive()"
+        >&#9776;</a
+      >
+    </div>
 
     <br />
 
@@ -150,5 +153,7 @@
       </div>
     </div>
     <p>Last updated at: 3/18/2020</p>
+
+    <script src="app.js"></script>
   </body>
 </html>
