@@ -8,14 +8,14 @@
 body {
   margin: 0;
   /* https://www.w3schools.com/css/css_background.asp */
-  background-image: url("images/background-light.jpg");
+  background-image: url("../images/background-light.jpg");
   font-family: "Raleway", sans-serif;
   color: black;
 }
 
 /* https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp */
 .dark-mode {
-  background-image: url("images/background-dark.jpg");
+  background-image: url("../images/background-dark.jpg");
   color: white;
 }
 
