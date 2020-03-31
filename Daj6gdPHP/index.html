@@ -12,68 +12,65 @@
     <meta charset="utf-8" />
     <title>Daniel Jaegers</title>
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
-    /> -->
-
-    <!-- https://fonts.google.com/?selection.family=Krona+One -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Krona+One&display=swap"
-      rel="stylesheet"
-    /> -->
+    />
 
     <link rel="stylesheet" type="text/css" href="app.css" />
   </head>
 
   <body>
     <div id="mainWrapper">
+      <h2>PHP Functions</h2>
       <form id="functionSelectForm">
         <select id="type" name="type" required>
           <option value="">Choose a function to run on the server...</option>
-          <option value="Greeting">Greeting</option>
-          <option value="Factorial">Factorial</option>
-          <option value="Reverse String">Reverse String</option>
-          <option value="Sum of Squares">Sum of Squares</option>
+          <option value="greetingForm">Greeting</option>
+          <option value="factorialForm">Factorial</option>
+          <option value="reverseStringForm">Reverse String</option>
+          <option value="sumOfSquaresForm">Sum of Squares</option>
         </select>
       </form>
 
-      <br>
+      <br />
 
-      <form id="greetingForm">
-        <label for="firstname">First name:</label>
-        <input type="text" id="firstname" name="firstname" /><br>
-        <label for="lastname">Last name:</label>
-        <input type="text" id="lastname" name="lastname" />
-      </form>
+      <div id="form-container">
+        <form id="greetingForm" hidden>
+          <label for="firstname">First name:</label>
+          <input type="text" id="firstname" name="firstname" /><br />
+          <label for="lastname">Last name:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </form>
 
-      <br>
+        <form id="factorialForm" hidden>
+          <label for="number">Number</label>
+          <input type="number" id="number" name="number" min="1" />
+        </form>
 
-      <form id="factorialForm">
-        <label for="number">Number</label>
-        <input type="number" id="number" name="number" min="1" />
-      </form>
+        <form id="reverseStringForm" hidden>
+          <label for="string">String</label>
+          <input type="text" id="string" name="string" />
+        </form>
 
-      <br>
-
-      <form id="reverseStringForm">
-        <label for="string">String</label>
-        <input type="text" id="string" name="string" />
-      </form>
-
-      <br>
-
-      <form id="sumOfSquaresForm">
-        <label for="n1">n1</label>
-        <input type="number" id="n1" name="n1" min="1" /><br>
-        <label for="n2">n2</label>
-        <input type="number" id="n2" name="n2" min="1" />
-      </form>
+        <form id="sumOfSquaresForm" hidden>
+          <label for="n1">n1</label>
+          <input type="number" id="n1" name="n1" min="1" /><br />
+          <label for="n2">n2</label>
+          <input type="number" id="n2" name="n2" min="1" />
+        </form>
+      </div>
     </div>
 
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
   </body>
 </html>
