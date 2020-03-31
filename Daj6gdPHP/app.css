@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  /* https://www.w3schools.com/css/css_background.asp */
+  background-image: url("../images/background-light.jpg");
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+#mainWrapper {
+  margin: 20px auto;
+  width: 70%;
+  min-height: 60vh;
+  background-color: darkslategrey;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+#functionSelectForm {
+  display: inline-block;
+  margin: 20px;
+}

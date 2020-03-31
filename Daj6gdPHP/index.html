@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- 
+    Daniel Jaegers
+    DAJ6GD
+    3/30/2020
+    Challenge 8: PHP S20
+ -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Jaegers</title>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- https://fonts.google.com/?selection.family=Krona+One -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Krona+One&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+
+  <body>
+    <div id="mainWrapper">
+      <form id="functionSelectForm">
+        <select id="type" name="type" required>
+          <option value="">Choose a function to run on the server...</option>
+          <option value="Greeting">Greeting</option>
+          <option value="Factorial">Factorial</option>
+          <option value="Reverse String">Reverse String</option>
+          <option value="Sum of Squares">Sum of Squares</option>
+        </select>
+      </form>
+
+      <br>
+
+      <form id="greetingForm">
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" /><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" />
+      </form>
+
+      <br>
+
+      <form id="factorialForm">
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" min="1" />
+      </form>
+
+      <br>
+
+      <form id="reverseStringForm">
+        <label for="string">String</label>
+        <input type="text" id="string" name="string" />
+      </form>
+
+      <br>
+
+      <form id="sumOfSquaresForm">
+        <label for="n1">n1</label>
+        <input type="number" id="n1" name="n1" min="1" /><br>
+        <label for="n2">n2</label>
+        <input type="number" id="n2" name="n2" min="1" />
+      </form>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
