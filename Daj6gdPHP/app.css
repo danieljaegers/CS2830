@@ -17,5 +17,27 @@ body {
 
 #functionSelectForm {
   display: inline-block;
-  margin: 20px;
+  margin: 20px auto;
 }
+
+#formContainer {
+    margin: 20px auto;
+}
+
+#addForm {
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px 20px;
+  }
