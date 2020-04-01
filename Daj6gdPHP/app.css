@@ -11,8 +11,13 @@ body {
   width: 70%;
   min-height: 60vh;
   background-color: darkslategrey;
-  border: 1px solid blue;
+  border: 1px solid black;
   text-align: center;
+  border-radius: 10px;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 #functionSelectForm {
@@ -21,23 +26,35 @@ body {
 }
 
 #formContainer {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
-#addForm {
-    margin: 10px auto;
-    width: 500px;
-    text-align: center;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  
-  select {
-    width: 100%;
-    padding: 12px 20px;
-  }
+#formContainer form {
+  margin: 10px auto;
+  width: 500px;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.submit,
+.clear {
+  background-color: cadetblue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+}
