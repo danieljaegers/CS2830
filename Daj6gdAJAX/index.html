@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- 
+    Daniel Jaegers
+    DAJ6GD
+    3/31/2020
+    Challenge 8: PHP S20
+ -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Jaegers</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+
+  <body>
+    <a href="../Daj6gdProjectsS20.html" class="align-left">Back to Projects</a>
+
+    <div id="mainWrapper">
+      <h1>CS 2830 Dashboard</h1>
+      <hr />
+
+      <p id="info">Loading...</p>
+
+      <div id="classType">Loading...</div>
+
+      <div id="currentAssignment">Loading...</div>
+
+      <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+      <div class="tab">
+        <button class="tablinks" onclick="officeHours(event, 'Monday')">
+          Monday
+        </button>
+        <button class="tablinks" onclick="officeHours(event, 'Tuesday')">
+          Tuesday
+        </button>
+        <button class="tablinks" onclick="officeHours(event, 'Wednesday')">
+          Wednesday
+        </button>
+        <button class="tablinks" onclick="officeHours(event, 'Thursday')">
+          Thursday
+        </button>
+        <button class="tablinks" onclick="officeHours(event, 'Friday')">
+          Friday
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Monday" class="tabcontent">
+        <p>Loading...</p>
+      </div>
+
+      <div id="Tuesday" class="tabcontent">
+        <p>Loading...</p>
+      </div>
+
+      <div id="Wednesday" class="tabcontent">
+        <p>Loading...</p>
+      </div>
+
+      <div id="Thursday" class="tabcontent">
+        <p>Loading...</p>
+      </div>
+
+      <div id="Friday" class="tabcontent">
+        <p>Loading...</p>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
