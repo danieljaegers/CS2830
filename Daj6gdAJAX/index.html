@@ -3,8 +3,8 @@
 <!-- 
     Daniel Jaegers
     DAJ6GD
-    3/31/2020
-    Challenge 8: PHP S20
+    4/12/2020
+    Challenge 9: AJAX Spring 2020
  -->
 
 <html lang="en-US">
@@ -36,50 +36,61 @@
 
       <p id="info">Loading...</p>
 
-      <div id="classType">Loading...</div>
+      <div id="columnsWrapper">
+        <div class="item column">
+          <h3>Class Type</h3>
+          <div id="classType">Loading...</div>
+        </div>
 
-      <div id="currentAssignment">Loading...</div>
-
-      <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
-      <div class="tab">
-        <button class="tablinks" onclick="officeHours(event, 'Monday')">
-          Monday
-        </button>
-        <button class="tablinks" onclick="officeHours(event, 'Tuesday')">
-          Tuesday
-        </button>
-        <button class="tablinks" onclick="officeHours(event, 'Wednesday')">
-          Wednesday
-        </button>
-        <button class="tablinks" onclick="officeHours(event, 'Thursday')">
-          Thursday
-        </button>
-        <button class="tablinks" onclick="officeHours(event, 'Friday')">
-          Friday
-        </button>
+        <div class="item column">
+          <h3>Current Assignment</h3>
+          <div id="currentAssignment">Loading...</div>
+        </div>
       </div>
 
-      <!-- Tab content -->
-      <div id="Monday" class="tabcontent">
-        <p>Loading...</p>
-      </div>
+      <div id="officeHours" class="item">
+        <h3>Office Hours</h3>
 
-      <div id="Tuesday" class="tabcontent">
-        <p>Loading...</p>
-      </div>
+        <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+        <div class="tab">
+          <button class="tablinks" onclick="officeHours(event, 'Monday')">
+            Monday
+          </button>
+          <button class="tablinks" onclick="officeHours(event, 'Tuesday')">
+            Tuesday
+          </button>
+          <button class="tablinks" onclick="officeHours(event, 'Wednesday')">
+            Wednesday
+          </button>
+          <button class="tablinks" onclick="officeHours(event, 'Thursday')">
+            Thursday
+          </button>
+          <button class="tablinks" onclick="officeHours(event, 'Friday')">
+            Friday
+          </button>
+        </div>
 
-      <div id="Wednesday" class="tabcontent">
-        <p>Loading...</p>
-      </div>
+        <!-- Tab content -->
+        <div id="Monday" class="tabcontent">
+          <p>Loading...</p>
+        </div>
 
-      <div id="Thursday" class="tabcontent">
-        <p>Loading...</p>
-      </div>
+        <div id="Tuesday" class="tabcontent">
+          <p>Loading...</p>
+        </div>
 
-      <div id="Friday" class="tabcontent">
-        <p>Loading...</p>
-      </div>
+        <div id="Wednesday" class="tabcontent">
+          <p>Loading...</p>
+        </div>
 
+        <div id="Thursday" class="tabcontent">
+          <p>Loading...</p>
+        </div>
+
+        <div id="Friday" class="tabcontent">
+          <p>Loading...</p>
+        </div>
+      </div>
     </div>
 
     <script src="app.js"></script>
